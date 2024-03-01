@@ -10,7 +10,6 @@ def main():
     if len(sys.argv) > 1:
         dir = sys.argv[1]
 
-    print(boltok)
     for bolt, kod in boltok.items():   
         for file in os.listdir(dir):
             if file.lower().endswith("szla.pdf") and kod in file.lower():
